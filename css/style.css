@@ -1,0 +1,58 @@
+:root {
+    /* heights */
+    --header-height: 75px;
+    --sidebar-sm-width: 75px;
+    --sidebar-lg-width: 150px;
+    --main-height: calc(100vh - var(--header-height) );
+}
+
+header {
+    height: var(--header-height);
+    width: 100%;
+
+    /* debug */
+    background-color: blue;
+}
+
+main {
+    height: var(--main-height) ;
+    width: 100%;
+    display: flex;
+    /* debug */
+    background-color: red;
+}
+
+.sidebar {
+    height: var(--main-height);
+    min-width: var(--sidebar-sm-width);
+    
+    /* debug */
+    background-color: green;
+}
+
+.content {
+    overflow-y: auto;
+    width: 100%;
+    /* debug */
+    background-color: yellow;
+}
+
+.top-bar {
+    min-height: 100px;
+    /* debug */
+    background-color: lightblue;
+}
+
+.dashboard {
+    width: 100%;
+    height: calc(100% - 100px);
+
+    background-color: lightcoral;
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) {
+    .sidebar {
+        width: var(--sidebar-lg-width);
+    }
+}
