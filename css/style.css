@@ -1,12 +1,14 @@
+/* RESET */
+img {
+    width: 100%;
+}
+
 :root {
     /* heights */
     --header-height: 75px;
     --sidebar-sm-width: 75px;
     --sidebar-lg-width: 150px;
     --main-height: calc(100vh - var(--header-height) );
-
-    /* colors */
-    --code-badge-color: #F26551;
 }
 
 header {
@@ -51,10 +53,10 @@ td {
     font-weight: 500;
 }
 
-.ms_bg-code {
-    background-color: var(--code-badge-color);
+td img {
+    width: 20px;
+    margin-right: 5px;
 }
-
 
 /* Tablet */
 @media screen and (min-width: 768px) {
