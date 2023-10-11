@@ -4,6 +4,9 @@
     --sidebar-sm-width: 75px;
     --sidebar-lg-width: 150px;
     --main-height: calc(100vh - var(--header-height) );
+
+    /* colors */
+    --code-badge-color: #F26551;
 }
 
 header {
@@ -18,8 +21,6 @@ main {
     height: var(--main-height) ;
     width: 100%;
     display: flex;
-    /* debug */
-    background-color: red;
 }
 
 .sidebar {
@@ -33,8 +34,6 @@ main {
 .content {
     overflow-y: auto;
     width: 100%;
-    /* debug */
-    background-color: yellow;
 }
 
 .top-bar {
@@ -46,8 +45,20 @@ main {
 .dashboard {
     width: 100%;
     height: calc(100% - 100px);
+}
 
-    background-color: lightcoral;
+td {
+    font-weight: 500;
+}
+
+.ms_bg-code {
+    background-color: var(--code-badge-color);
+}
+
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+    
 }
 
 /* Desktop */
