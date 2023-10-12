@@ -20,269 +20,315 @@
 </head>
 
 <body>
-    <!-- Header -->
-    <header>
+    <!-- wrapper -->
+    <div class="wrapper">
+        <!-- Header -->
+        <header>
 
-    </header>
-    <!-- /Header -->
+        </header>
+        <!-- /Header -->
 
-    <!-- Main -->
-    <main>
-        <!-- Sidebar -->
-        <div class="sidebar">
+        <!-- Main -->
+        <main class="d-flex">
+            <!-- Sidebar -->
+            <div class="sidebar p-3 d-flex flex-column justify-content-between">
+                <div>
+                    <ul class="list-unstyled text-center">
+                        <!-- Home -->
+                        <li class="my-1">
+                            <a href="" class="link-light text-decoration-none">
+                                <i class="fa-solid fa-house"></i>
+                                <span class="d-none d-lg-inline">Home</span>
+                            </a>
+                        </li>
+                        <!-- /Home -->
 
-        </div>
+                        <!-- Stats -->
+                        <li class="my-1">
+                            <a href="" class="link-light text-decoration-none">
+                                <i class="fa-solid fa-chart-simple"></i>
+                                <span class="d-none d-lg-inline">Stats</span>
+                            </a>
+                        </li>
+                        <!-- /Stats -->
 
-        <!-- Main content -->
-        <div class="content">
-
-            <div class="top-bar">
-
-            </div>
-
-            <!-- Main dashboard -->
-            <div class="dashboard">
-                <!-- Main Dashboard row -->
-                <div class="row row-cols-1 row-cols-lg-2">
-                    <!-- Left column -->
-                    <div class="col-lg-8 pe-lg-0">
-                        <!-- Left container -->
-                        <div class="container pe-lg-1">
-                            <!-- Table -->
-                            <div class="card my-3">
-                                <!-- Table title -->
-                                <h3 class="card-header">
-                                    Prossime classi
-                                </h3>
-
-                                <div class="card-body">
-
-
-                                    <table class="table">
-                                        <!-- table head -->
-                                        <thead>
-                                            <tr>
-                                                <th>Nome</th>
-                                                <th class="d-none d-md-table-cell">Data Inizio</th>
-                                                <th class="d-none d-md-table-cell">ROI</th>
-                                                <th>Stato</th>
-                                                <th>Azioni</th>
-                                            </tr>
-                                        </thead>
-
-                                        <!-- Table Body -->
-                                        <tbody>
-                                            <tr>
-                                                <!-- Name -->
-                                                <td>
-                                                    <img src="img/class-avatar.jpg" alt="">
-
-                                                    Classe 75
-                                                </td>
-
-                                                <!-- Start Date -->
-                                                <td class="d-none d-md-table-cell">
-                                                    15 Feb 2021
-                                                </td>
-
-                                                <!-- ROI -->
-                                                <td class="d-none d-md-table-cell">
-                                                    20%
-                                                </td>
-
-                                                <!-- State -->
-                                                <td>
-                                                    <span class="badge bg-success">Done</span>
-                                                </td>
-
-                                                <!-- Actions -->
-                                                <td>
-                                                    <i class="fa-solid fa-pencil border border-dark rounded p-2"></i>
-
-                                                    <i class="fa-solid fa-trash border border-dark rounded p-2"></i>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-
-                            </div>
-                            <!-- /Table -->
-
-                            <!-- FAQ -->
-                            <div class="card my-3">
-                                <!-- Title -->
-
-                                <h3 class="card-header">F.A.Q.</h3>
-
-
-                                <!-- Questions -->
-                                <div class="accordion">
-                                    <!-- First question -->
-                                    <p class="accordion-header" id="headingTwo">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#faq1">
-                                            Come aggiungere un nuovo studente?
-                                        </button>
-                                    </p>
-                                    <!-- First answer -->
-                                    <div id="faq1" class="accordion-collapse collapse">
-                                        <div class="accordion-body">
-                                            Clicca sul + in alto nella sezione blu.
-                                        </div>
-                                    </div>
-
-                                    <!-- Second question -->
-                                    <p class="accordion-header" id="headingTwo">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#faq2">
-                                            Come posso accedere alle informazioni del mio account?
-                                        </button>
-                                    </p>
-                                    <!-- Second answer -->
-                                    <div id="faq2" class="accordion-collapse collapse">
-                                        <div class="accordion-body">
-                                            Clicca sull'icona della campanella.
-                                        </div>
-                                    </div>
-
-                                    <!-- Third question -->
-                                    <p class="accordion-header" id="headingTwo">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#faq3">
-                                            Posso usare questa dashboard da mobile?
-                                        </button>
-                                    </p>
-                                    <!-- Third answer -->
-                                    <div id="faq3" class="accordion-collapse collapse">
-                                        <div class="accordion-body">
-                                            si, certo.
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                            <!-- /FAQ -->
-                        </div>
-                        <!-- /Left container -->
-                    </div>
-                    <!-- /Left column -->
-
-                    <!-- Right column -->
-                    <div class="col-lg-4 ps-lg-0">
-                        <!-- Right container -->
-                        <div class="container">
-                            <!-- TODO list card-->
-                            <div class="card my-3">
-                                <!-- TODO list title -->
-                                <h3 class="card-header">
-                                    TODO
-                                </h3>
-                                <!-- /TODO list title -->
-                                <div class="card-body">
-                                    <!-- Check list group-->
-                                    <ul class="list-group">
-                                        <!-- list item -->
-                                        <li class="list-group-item">
-                                            <input type="checkbox" class="form-check-input">
-                                            <label>Kickoff nuove classi</label>
-                                        </li>
-                                        <!-- /list item -->
-
-                                        <!-- list item -->
-                                        <li class="list-group-item">
-                                            <input type="checkbox" class="form-check-input">
-                                            <label>Lezione su Bootstrap 5 in classe #75</label>
-                                        </li>
-                                        <!-- /list item -->
-
-                                        <!-- list item -->
-                                        <li class="list-group-item">
-                                            <input type="checkbox" class="form-check-input">
-                                            <label>Controllare username github studenti</label>
-                                        </li>
-                                        <!-- /list item -->
-                                    </ul>
-                                    <!-- /Check list group-->
-                                </div>
-                            </div>
-                            <!-- /TODO list card-->
-
-                            <!-- Graph external card -->
-                            <div class="card p-2">
-                                <!-- Graph internal card -->
-                                <div class="card">
-                                    <!-- image top card -->
-                                    <img src="img/stats.jpeg" class="card-img-top" alt="Stats">
-                                    <!-- /image top card -->
-
-                                    <!-- Card body -->
-                                    <div class="card-body p-0">
-                                        <!-- Card title -->
-                                        <h5 class="card-title px-3">
-                                            Utenti Attivi
-                                        </h5>
-                                        <!-- /Card title -->
-                                    </div>
-                                    <!-- Card subtitle -->
-                                    <p class="card-subtitle px-3">
-                                        Lista degli utenti attivi in piattaforma nell'ultimo mese
-                                    </p>
-                                    <!-- /Card subtitle -->
-
-                                    <!-- Active users list -->
-                                    <ul class="list-group list-group-flush">
-                                        <!-- January -->
-                                        <li class="list-group-item">
-                                            Gennaio: 1200
-                                        </li>
-
-                                        <!-- February -->
-                                        <li class="list-group-item">
-                                            Febbraio: 800
-                                        </li>
-
-                                        <!-- March -->
-                                        <li class="list-group-item">
-                                            Marzo: 1500
-                                        </li>
-                                    </ul>
-                                    <!-- /Active users list -->
-
-
-                                    <!-- Report link -->
-                                    <div class="card-body">
-                                       <a href="" class="card-link">Visualizza report approfondito</a> 
-                                    </div>
-                                    
-                                    <!-- /Report link -->
-
-                                    <!-- /Card body -->
-                                </div>
-                                <!-- /Graph internal card -->
-                            </div>
-                            <!-- /Graph external card -->
-
-                        </div>
-                        <!-- /Right container -->
-                    </div>
-                    <!-- /Right column -->
+                        <!-- Signals -->
+                        <li class="my-1">
+                            <a href="" class="link-light text-decoration-none">
+                                <i class="fa-solid fa-signal"></i>
+                                <span class="d-none d-lg-inline">Signals</span>
+                            </a>
+                        </li>
+                        <!-- /Signals -->
+                    </ul>
                 </div>
-                <!-- /Main Dashboard row -->
+                
+                <!-- Admin -->
+                <div class="text-center">
+                    <a href="" class="link-light text-decoration-none">
+                        <i class="fa-solid fa-gear"></i>
+                        <span class="d-none d-lg-inline">Admin</span>
+                    </a>
+                </div>
+                <!-- /Admin -->
             </div>
-            <!-- /Main dashboard -->
-        </div>
-        <!-- /Main content -->
-    </main>
-    <!-- Main -->
+
+            <!-- Main content -->
+            <div class="content overflow-auto">
+                <!-- Top dashboard bar -->
+                <div class="top-bar">
+                </div>
+                <!-- Top dashboard bar -->
+
+                <!-- Main dashboard -->
+                <div class="dashboard">
+                    <!-- Main Dashboard row -->
+                    <div class="row row-cols-1 row-cols-lg-2">
+                        <!-- Left column -->
+                        <div class="col-lg-8 pe-lg-0">
+                            <!-- Left container -->
+                            <div class="container pe-lg-1">
+                                <!-- Table -->
+                                <div class="card my-3">
+                                    <!-- Table title -->
+                                    <h3 class="card-header">
+                                        Prossime classi
+                                    </h3>
+
+                                    <div class="card-body">
 
 
-    <!-- CAMBIARE LA TABLE, IN NAME METTERE IMG AVATAR E NON UN ICONA -->
+                                        <table class="table">
+                                            <!-- table head -->
+                                            <thead>
+                                                <tr>
+                                                    <th>Nome</th>
+                                                    <th class="d-none d-md-table-cell">Data Inizio</th>
+                                                    <th class="d-none d-md-table-cell">ROI</th>
+                                                    <th>Stato</th>
+                                                    <th>Azioni</th>
+                                                </tr>
+                                            </thead>
 
+                                            <!-- Table Body -->
+                                            <tbody>
+                                                <tr>
+                                                    <!-- Name -->
+                                                    <td>
+                                                        <img src="img/class-avatar.jpg" alt="">
+
+                                                        Classe 75
+                                                    </td>
+
+                                                    <!-- Start Date -->
+                                                    <td class="d-none d-md-table-cell">
+                                                        15 Feb 2021
+                                                    </td>
+
+                                                    <!-- ROI -->
+                                                    <td class="d-none d-md-table-cell">
+                                                        20%
+                                                    </td>
+
+                                                    <!-- State -->
+                                                    <td>
+                                                        <span class="badge bg-success">Done</span>
+                                                    </td>
+
+                                                    <!-- Actions -->
+                                                    <td>
+                                                        <i
+                                                            class="fa-solid fa-pencil border border-dark rounded p-2"></i>
+
+                                                        <i class="fa-solid fa-trash border border-dark rounded p-2"></i>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+                                <!-- /Table -->
+
+                                <!-- FAQ -->
+                                <div class="card my-3">
+                                    <!-- Title -->
+
+                                    <h3 class="card-header">F.A.Q.</h3>
+
+
+                                    <!-- Questions -->
+                                    <div class="accordion">
+                                        <!-- First question -->
+                                        <p class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#faq1">
+                                                Come aggiungere un nuovo studente?
+                                            </button>
+                                        </p>
+                                        <!-- First answer -->
+                                        <div id="faq1" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                Clicca sul + in alto nella sezione blu.
+                                            </div>
+                                        </div>
+
+                                        <!-- Second question -->
+                                        <p class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#faq2">
+                                                Come posso accedere alle informazioni del mio account?
+                                            </button>
+                                        </p>
+                                        <!-- Second answer -->
+                                        <div id="faq2" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                Clicca sull'icona della campanella.
+                                            </div>
+                                        </div>
+
+                                        <!-- Third question -->
+                                        <p class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#faq3">
+                                                Posso usare questa dashboard da mobile?
+                                            </button>
+                                        </p>
+                                        <!-- Third answer -->
+                                        <div id="faq3" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                si, certo.
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <!-- /FAQ -->
+                            </div>
+                            <!-- /Left container -->
+                        </div>
+                        <!-- /Left column -->
+
+                        <!-- Right column -->
+                        <div class="col-lg-4 ps-lg-0">
+                            <!-- Right container -->
+                            <div class="container">
+                                <!-- TODO list card-->
+                                <div class="card my-3">
+                                    <!-- TODO list title -->
+                                    <h3 class="card-header">
+                                        Todo
+                                    </h3>
+                                    <!-- /TODO list title -->
+                                    <div class="card-body">
+                                        <!-- Check list group-->
+                                        <ul class="list-group">
+                                            <!-- list item -->
+                                            <li class="list-group-item">
+                                                <input type="checkbox" class="form-check-input">
+                                                <label>Kickoff nuove classi</label>
+                                            </li>
+                                            <!-- /list item -->
+
+                                            <!-- list item -->
+                                            <li class="list-group-item">
+                                                <input type="checkbox" class="form-check-input">
+                                                <label>Lezione su Bootstrap 5 in classe #75</label>
+                                            </li>
+                                            <!-- /list item -->
+
+                                            <!-- list item -->
+                                            <li class="list-group-item">
+                                                <input type="checkbox" class="form-check-input">
+                                                <label>Controllare username github studenti</label>
+                                            </li>
+                                            <!-- /list item -->
+                                        </ul>
+                                        <!-- /Check list group-->
+                                    </div>
+                                </div>
+                                <!-- /TODO list card-->
+
+                                <!-- Graph external card -->
+                                <div class="card p-2">
+                                    <!-- Graph internal card -->
+                                    <div class="card">
+                                        <!-- image top card -->
+                                        <img src="img/stats.jpeg" class="card-img-top" alt="Stats">
+                                        <!-- /image top card -->
+
+                                        <!-- Card body -->
+                                        <div class="card-body p-0">
+                                            <!-- Card title -->
+                                            <h5 class="card-title px-3">
+                                                Utenti Attivi
+                                            </h5>
+                                            <!-- /Card title -->
+
+                                            <!-- Card subtitle -->
+                                            <p class="card-subtitle px-3">
+                                                Lista degli utenti attivi in piattaforma nell'ultimo mese
+                                            </p>
+                                            <!-- /Card subtitle -->
+                                        </div>
+                                        <!-- /Card body -->
+
+                                        <!-- Active users list -->
+                                        <ul class="list-group list-group-flush">
+                                            <!-- January -->
+                                            <li class="list-group-item">
+                                                Gennaio: 1200
+                                            </li>
+
+                                            <!-- February -->
+                                            <li class="list-group-item">
+                                                Febbraio: 800
+                                            </li>
+
+                                            <!-- March -->
+                                            <li class="list-group-item">
+                                                Marzo: 1500
+                                            </li>
+                                        </ul>
+                                        <!-- /Active users list -->
+
+                                        <!-- Card body -->
+                                        <div class="card-body">
+                                            <!-- Report link -->
+                                            <a href="" class="card-link">
+                                                Visualizza report approfondito
+                                            </a>
+                                            <!-- /Report link -->
+                                        </div>
+                                        <!-- /Card body -->
+
+
+                                    </div>
+                                    <!-- /Graph internal card -->
+                                </div>
+                                <!-- /Graph external card -->
+
+                            </div>
+                            <!-- /Right container -->
+                        </div>
+                        <!-- /Right column -->
+                    </div>
+                    <!-- /Main Dashboard row -->
+                </div>
+                <!-- /Main dashboard -->
+            </div>
+            <!-- /Main content -->
+        </main>
+        <!-- Main -->
+    </div>
+    <!-- wrapper -->
+
+    <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <!-- /Bootstrap JavaScript -->
 </body>
 
 </html>
