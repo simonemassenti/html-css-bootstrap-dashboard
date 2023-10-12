@@ -66,7 +66,32 @@
 
                             <!-- bell -->
                             <li class="ms-3">
-                                <i class="fa-solid fa-bell bell"></i>
+                                <!-- Dropdown button -->
+                                <a class="btn p-0 dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-bell bell"></i>
+                                </a>
+                                <!-- Dropdown menu -->
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <!-- Profile -->
+                                    <li>
+                                        <a class="dropdown-item" href="#">Profilo</a>
+                                    </li>
+                                    <!-- /Profile -->
+
+                                    <!-- Faturation -->
+                                    <li>
+                                        <a class="dropdown-item" href="#">Fatturazione</a>
+                                    </li>
+                                    <!-- /Faturation -->
+
+                                    <!-- Logout -->
+                                    <li>
+                                        <a class="dropdown-item" href="#">Logout</a>
+                                    </li>
+                                    <!-- /Logout -->
+                                </ul>
+                                <!-- /Dropdown menu -->
                             </li>
                             <!-- bell -->
                         </ul>
@@ -85,6 +110,7 @@
             <!-- Sidebar -->
             <div class="sidebar p-3 d-flex flex-column justify-content-between">
                 <div>
+                    <!-- Sidebar acton buttons -->
                     <ul class="list-unstyled text-center">
                         <!-- Home -->
                         <li class="my-1">
@@ -113,14 +139,21 @@
                         </li>
                         <!-- /Signals -->
                     </ul>
+                    <!-- Sidebar acton buttons -->
                 </div>
 
                 <!-- Admin -->
-                <div class="text-center">
-                    <a href="" class="link-light text-decoration-none">
-                        <i class="fa-solid fa-gear"></i>
-                        <span class="d-none d-lg-inline">Admin</span>
-                    </a>
+                <div class="admin text-center">
+                    <ul class="list-unstyled text-center">
+                        <!-- Admin action button -->
+                        <li class="my-1">
+                            <a href="" class="link-light text-decoration-none">
+                                <i class="fa-solid fa-gear"></i>
+                                <span class="d-none d-lg-inline">Admin</span>
+                            </a>
+                        </li>
+                        <!-- /Admin action button -->
+                    </ul>
                 </div>
                 <!-- /Admin -->
             </div>
@@ -140,7 +173,7 @@
                                         aria-controls="offcanvasRight">+</button>
                                     <!-- /New student button (Opens offcanva) -->
                                 </h6>
-                                
+
                                 <!-- Offcanvs form -->
                                 <div class="offcanvas offcanvas-end text-dark" tabindex="-1" id="new_student"
                                     aria-labelledby="offcanvasRightLabel">
