@@ -4,21 +4,31 @@ img {
 }
 
 :root {
+    /* Breadcrumb */
+    --bs-breadcrumb-divider: '>>';
+
+
     /* heights */
-    --header-height: 75px;
+    --header-height: 60px;
     --main-height: calc(100vh - var(--header-height));
     --sidebar-icon-height: 30px;
-    --dashboard-height: calc(100% - var(--header-height));
+    --dashboard-height: calc(100vh - var(--header-height));
 
     /* widths */
     --sidebar-sm-width: 70px;
     --sidebar-lg-width: 140px;
     --sidebar-icon-width: 30px;
     --table-avatar-width: 25px;
+    --logo-mobile-width: 50px;
 
-    /* backgrounds */
+    /* colors */
     --bg-sidebar-color: #051E34;
     --bg-sidebar-img: url(../img/sidebar-bg.png);
+    --bg-search-bar: #e6e6e6;
+    --bg-dashboard-top-bar: #1B72E8;
+    --bg-badge: #165BBA;
+    --color-bell: #FF8F00;
+    --white-color: white;
 }
 
 .wrapper {
@@ -29,11 +39,32 @@ img {
 header {
     height: var(--header-height);
     width: 100%;
-
-    /* debug */
-    background-color: blue;
+    font-size: 1rem;
 }
 
+header i {
+    font-size: 18px;
+}
+
+.logo-mobile {
+    width: var(--logo-mobile-width);
+}
+
+.search-bar {
+    background-color: var(--bg-search-bar);
+    max-height: 30px;
+}
+
+.search-bar input {
+    border: 0;
+    background-color: transparent;
+}
+
+.bell {
+    color: var(--color-bell);
+}
+
+/* MAIN */
 main {
     height: var(--main-height);
     width: 100%;
@@ -56,14 +87,17 @@ main {
 }
 
 .top-bar {
-    min-height: 100px;
-    /* debug */
-    background-color: lightblue;
+    background-color: var(--bg-dashboard-top-bar);
 }
 
-.dashboard {
-    width: 100%;
-    height: var(--dashboard-height);
+.breadcrumb-item+.breadcrumb-item::before {
+    color: var(--white-color);
+    content: '>>';
+}
+
+.ms_badge {
+    background-color: var(--bg-badge);
+    font-size: .8rem;
 }
 
 td {

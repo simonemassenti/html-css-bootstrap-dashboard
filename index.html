@@ -23,8 +23,60 @@
     <!-- wrapper -->
     <div class="wrapper">
         <!-- Header -->
-        <header>
+        <header class="p-2 d-flex align-items-center">
+            <!-- Container -->
+            <div class="container-fluid">
+                <!-- Row -->
+                <div class="row d-flex">
+                    <!-- Logo -->
+                    <div class="col-auto me-2">
+                        <img class="d-lg-none logo-mobile" src="img/mobile-logo.png" alt="Logo">
+                        <img class="d-none d-lg-inline-block" src="img/logo.svg" alt="Logo">
+                    </div>
+                    <!-- /Logo -->
 
+                    <!-- Search bar -->
+                    <div class="col d-flex border rounded search-bar align-self-center">
+                        <i class="fa-solid fa-magnifying-glass align-self-center me-3"></i>
+                        <input class="flex-grow-1 " type="search" >
+                    </div>
+                    <!-- Search bar -->
+
+                    <!-- Action buttons -->
+                    <div class="col-auto align-self-center">
+                        <!-- Action buttons list -->
+                        <ul class="list-unstyled d-flex m-0">
+                            <!-- list -->
+                            <li class="ms-3 d-none d-lg-inline">
+                                <i class="fa-solid fa-list-ul"></i>
+                            </li>
+                            <!-- /list -->
+
+                            <!-- info -->
+                            <li class="ms-3 d-none d-lg-inline">
+                                <i class="fa-solid fa-circle-question"></i>
+                            </li>
+                            <!-- /info -->
+
+                            <!-- menu -->
+                            <li class="ms-3 d-none d-lg-inline">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </li>
+                            <!-- menu -->
+
+                            <!-- bell -->
+                            <li class="ms-3">
+                                <i class="fa-solid fa-bell bell"></i>
+                            </li>
+                            <!-- bell -->
+                        </ul>
+                        <!-- /Action buttons list -->
+                    </div>
+                    <!-- /Action buttons -->
+                </div>
+                <!-- Row -->
+            </div>
+            <!-- /Container -->
         </header>
         <!-- /Header -->
 
@@ -77,12 +129,46 @@
             <div class="content overflow-auto">
                 <!-- Top dashboard bar -->
                 <div class="top-bar">
+                    <div class="container-fluid">
+                        <div class="row row-cols-1 row-cols-md-3 text-white py-2 d-flex">
+                            <!-- New student -->
+                            <div class="col-md-3 order-md-3">
+                                <h6>Nuovo studente <span>+</span></h6>
+                            </div>
+                            <!-- /New student -->
+
+                            <!-- Boolean -->
+                            <div class="col-md-5 order-md-1">
+                                <h2>Boolean <span class="badge rounded-pill ms_badge">Piano blaze</span></h2>
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><span class="badge rounded-pill ms_badge">3 app</span></li>
+                                    <li class="breadcrumb-item d-lg-none">
+                                        <span class="badge rounded-pill ms_badge">+</span>
+                                    </li>
+                                    <li class="breadcrumb-item d-none d-lg-inline">
+                                        <span class="badge rounded-pill ms_badge">Boolean mobile app</span>
+                                        <span class="badge rounded-pill ms_badge">Boolean web app</span>
+                                        <span class="badge rounded-pill ms_badge">Boolean blog app</span>
+                                    </li>
+                                </ol>
+                            </div>
+                            <!-- /Boolean -->
+                            
+                            <!-- Online students -->
+                            <div class="col-md-4 order-md-2">
+                                <h6>Studenti online negli ultimi 30 minuti</h6>
+                                <h3>125</h3>
+                            </div>
+                            <!-- Online students -->
+                        </div>
+                    </div>
                 </div>
                 <!-- Top dashboard bar -->
 
                 <!-- Main dashboard -->
                 <div class="dashboard">
-                    <!-- Main Dashboard row -->
+                    <div class="container">
+                      <!-- Main Dashboard row -->
                     <div class="row row-cols-1 row-cols-lg-2">
                         <!-- Left column -->
                         <div class="col-lg-8 pe-lg-0">
@@ -211,7 +297,7 @@
                         <!-- /Left column -->
 
                         <!-- Right column -->
-                        <div class="col-lg-4 ps-lg-0">
+                        <div class="col-lg-4 p-lg-0">
                             <!-- Right container -->
                             <div class="container">
                                 <!-- TODO list card-->
@@ -314,7 +400,9 @@
                         </div>
                         <!-- /Right column -->
                     </div>
-                    <!-- /Main Dashboard row -->
+                    <!-- /Main Dashboard row -->  
+                    </div>
+                    
                 </div>
                 <!-- /Main dashboard -->
             </div>
