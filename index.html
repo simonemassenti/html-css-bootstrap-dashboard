@@ -38,7 +38,7 @@
                     <!-- Search bar -->
                     <div class="col d-flex border rounded search-bar align-self-center">
                         <i class="fa-solid fa-magnifying-glass align-self-center me-3"></i>
-                        <input class="flex-grow-1 " type="search" >
+                        <input class="flex-grow-1 " type="search">
                     </div>
                     <!-- Search bar -->
 
@@ -114,7 +114,7 @@
                         <!-- /Signals -->
                     </ul>
                 </div>
-                
+
                 <!-- Admin -->
                 <div class="text-center">
                     <a href="" class="link-light text-decoration-none">
@@ -133,7 +133,157 @@
                         <div class="row row-cols-1 row-cols-md-3 text-white py-2 d-flex">
                             <!-- New student -->
                             <div class="col-md-3 order-md-3">
-                                <h6>Nuovo studente <span>+</span></h6>
+                                <h6>Nuovo studente
+                                    <!-- New student button (Opens offcanva) -->
+                                    <button class="btn btn-outline-light ms_btn ms-2" type="button"
+                                        data-bs-toggle="offcanvas" data-bs-target="#new_student"
+                                        aria-controls="offcanvasRight">+</button>
+                                    <!-- /New student button (Opens offcanva) -->
+                                </h6>
+                                
+                                <!-- Offcanvs form -->
+                                <div class="offcanvas offcanvas-end text-dark" tabindex="-1" id="new_student"
+                                    aria-labelledby="offcanvasRightLabel">
+                                    <div class="offcanvas-header">
+                                        <!-- Offcanvas Title -->
+                                        <h5 id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                                        <!-- /Offcanvas Title -->
+
+                                        <!-- Close buttons -->
+                                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                        <!-- /Close buttons -->
+                                    </div>
+                                    <!-- Offcanvas body -->
+                                    <div class="offcanvas-body p-0">
+                                        <!-- Container offcanvas form -->
+                                        <div class="container-fluid">
+                                            <!-- First row -->
+                                            <div class="row g-2">
+                                                <!-- First column -->
+                                                <div class="col-6">
+                                                    <div class="input-group">
+                                                        <!-- Name -->
+                                                        <label>Nome</label>
+                                                        <input type="text" class="w-100 border ms_border-color rounded">
+                                                        <!-- /Name -->
+
+                                                        <!-- Email -->
+                                                        <label>Email</label>
+                                                        <div class="input-group flex-nowrap w-100">
+                                                            <span
+                                                                class="border ms_border-color rounded-start px-2 bg-offcanvas-input">@</span>
+                                                            <input type="text"
+                                                                class="w-100 border ms_border-color rounded-end">
+                                                        </div>
+                                                        <!-- /Email -->
+
+                                                        <!-- Email repet -->
+                                                        <label>Indirizzo Email</label>
+                                                        <div class="input-group flex-nowrap w-100">
+                                                            <span
+                                                                class="border ms_border-color rounded-start px-2">@</span>
+                                                            <input type="text"
+                                                                class="w-100 border ms_border-color rounded-end">
+                                                        </div>
+                                                        <!-- /Email repet -->
+                                                    </div>
+                                                </div>
+                                                <!-- /First column -->
+
+                                                <!-- Second column -->
+                                                <div class="col-6">
+                                                    <div class="input-group">
+                                                        <!-- Surname -->
+                                                        <label>Cognome</label>
+                                                        <input type="text" class="w-100 border ms_border-color rounded">
+                                                        <!-- /Surname -->
+
+                                                        <!-- Password -->
+                                                        <label>Password</label>
+                                                        <input type="password"
+                                                            class="w-100 border ms_border-color rounded">
+                                                        <!-- /Password -->
+
+                                                        <!-- Password repet -->
+                                                        <label>Password</label>
+                                                        <input type="password"
+                                                            class="w-100 border ms_border-color rounded">
+                                                        <!-- /Password repet -->
+                                                    </div>
+                                                </div>
+                                                <!-- /Second column -->
+                                            </div>
+                                            <!-- /First row -->
+
+                                            <!-- Second row -->
+                                            <div class="row">
+                                                <div class="col-12 p-0">
+                                                    <!-- Address -->
+                                                    <label class="d-block">Indirizzo</label>
+                                                    <input type="text" class="w-100 border ms_border-color rounded">
+                                                    <!-- /Address -->
+                                                </div>
+                                            </div>
+                                            <!-- /Second row -->
+
+                                            <!-- Third row -->
+                                            <div class="row">
+                                                <!-- City -->
+                                                <div class="col-5 p-0">
+                                                    <label class="">Città</label>
+                                                    <input type="text" class="w-100 border ms_border-color rounded">
+                                                </div>
+                                                <!-- /City -->
+
+                                                <!-- State -->
+                                                <div class="col-4">
+                                                    <label class="">Stato</label>
+                                                    <select class="w-100 border ms_border-color rounded">
+                                                        <option class=""></option>
+                                                        <option value="1">Afghanistan</option>
+                                                        <option value="2">Armenia</option>
+                                                        <option value="3">Azerbaijan</option>
+                                                    </select>
+                                                </div>
+                                                <!-- /State -->
+
+                                                <!-- C.a.p. -->
+                                                <div class="col-3 p-0">
+                                                    <label class="">C.a.p.</label>
+                                                    <input type="text" class="w-100 border ms_border-color rounded">
+                                                </div>
+                                                <!-- /C.a.p. -->
+                                            </div>
+                                            <!-- /Third row -->
+
+                                            <!-- Forth row -->
+                                            <div class="row">
+                                                <!-- Photo -->
+                                                <div class="col p-0">
+                                                    <label>Foto</label>
+                                                    <input type="file" class="form-control">
+                                                </div>
+                                                <!-- /Photo -->
+
+                                                <!-- Select to continue -->
+                                                <label for="check" class="p-0 my-2">
+                                                    <input type="checkbox" class="me-2" id="check">
+                                                    Seleziona per proseguire
+                                                </label>
+                                                <!-- /Select to continue -->
+
+                                                <!-- Save and empty buttons -->
+                                                <button type="button" class="btn btn-primary me-2">Salva</button>
+                                                <button type="button" class="btn btn-warning">Svuota</button>
+                                                <!-- /Save and empty buttons -->
+                                            </div>
+                                            <!-- /Forth row -->
+                                        </div>
+                                        <!-- /Container offcanvas form -->
+                                    </div>
+                                </div>
+                                <!-- /Offcanvs form -->
                             </div>
                             <!-- /New student -->
 
@@ -141,7 +291,8 @@
                             <div class="col-md-5 order-md-1">
                                 <h2>Boolean <span class="badge rounded-pill ms_badge">Piano blaze</span></h2>
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><span class="badge rounded-pill ms_badge">3 app</span></li>
+                                    <li class="breadcrumb-item"><span class="badge rounded-pill ms_badge">3 app</span>
+                                    </li>
                                     <li class="breadcrumb-item d-lg-none">
                                         <span class="badge rounded-pill ms_badge">+</span>
                                     </li>
@@ -153,7 +304,7 @@
                                 </ol>
                             </div>
                             <!-- /Boolean -->
-                            
+
                             <!-- Online students -->
                             <div class="col-md-4 order-md-2">
                                 <h6>Studenti online negli ultimi 30 minuti</h6>
@@ -168,241 +319,242 @@
                 <!-- Main dashboard -->
                 <div class="dashboard">
                     <div class="container">
-                      <!-- Main Dashboard row -->
-                    <div class="row row-cols-1 row-cols-lg-2">
-                        <!-- Left column -->
-                        <div class="col-lg-8 pe-lg-0">
-                            <!-- Left container -->
-                            <div class="container pe-lg-1">
-                                <!-- Table -->
-                                <div class="card my-3">
-                                    <!-- Table title -->
-                                    <h3 class="card-header">
-                                        Prossime classi
-                                    </h3>
+                        <!-- Main Dashboard row -->
+                        <div class="row row-cols-1 row-cols-lg-2">
+                            <!-- Left column -->
+                            <div class="col-lg-8 pe-lg-0">
+                                <!-- Left container -->
+                                <div class="container pe-lg-1">
+                                    <!-- Table -->
+                                    <div class="card my-3">
+                                        <!-- Table title -->
+                                        <h3 class="card-header">
+                                            Prossime classi
+                                        </h3>
 
-                                    <div class="card-body">
-
-
-                                        <table class="table">
-                                            <!-- table head -->
-                                            <thead>
-                                                <tr>
-                                                    <th>Nome</th>
-                                                    <th class="d-none d-md-table-cell">Data Inizio</th>
-                                                    <th class="d-none d-md-table-cell">ROI</th>
-                                                    <th>Stato</th>
-                                                    <th>Azioni</th>
-                                                </tr>
-                                            </thead>
-
-                                            <!-- Table Body -->
-                                            <tbody>
-                                                <tr>
-                                                    <!-- Name -->
-                                                    <td>
-                                                        <img src="img/class-avatar.jpg" alt="">
-
-                                                        Classe 75
-                                                    </td>
-
-                                                    <!-- Start Date -->
-                                                    <td class="d-none d-md-table-cell">
-                                                        15 Feb 2021
-                                                    </td>
-
-                                                    <!-- ROI -->
-                                                    <td class="d-none d-md-table-cell">
-                                                        20%
-                                                    </td>
-
-                                                    <!-- State -->
-                                                    <td>
-                                                        <span class="badge bg-success">Done</span>
-                                                    </td>
-
-                                                    <!-- Actions -->
-                                                    <td>
-                                                        <i
-                                                            class="fa-solid fa-pencil border border-dark rounded p-2"></i>
-
-                                                        <i class="fa-solid fa-trash border border-dark rounded p-2"></i>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-
-                                </div>
-                                <!-- /Table -->
-
-                                <!-- FAQ -->
-                                <div class="card my-3">
-                                    <!-- Title -->
-
-                                    <h3 class="card-header">F.A.Q.</h3>
-
-
-                                    <!-- Questions -->
-                                    <div class="accordion">
-                                        <!-- First question -->
-                                        <p class="accordion-header" id="headingTwo">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#faq1">
-                                                Come aggiungere un nuovo studente?
-                                            </button>
-                                        </p>
-                                        <!-- First answer -->
-                                        <div id="faq1" class="accordion-collapse collapse">
-                                            <div class="accordion-body">
-                                                Clicca sul + in alto nella sezione blu.
-                                            </div>
-                                        </div>
-
-                                        <!-- Second question -->
-                                        <p class="accordion-header" id="headingTwo">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#faq2">
-                                                Come posso accedere alle informazioni del mio account?
-                                            </button>
-                                        </p>
-                                        <!-- Second answer -->
-                                        <div id="faq2" class="accordion-collapse collapse">
-                                            <div class="accordion-body">
-                                                Clicca sull'icona della campanella.
-                                            </div>
-                                        </div>
-
-                                        <!-- Third question -->
-                                        <p class="accordion-header" id="headingTwo">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#faq3">
-                                                Posso usare questa dashboard da mobile?
-                                            </button>
-                                        </p>
-                                        <!-- Third answer -->
-                                        <div id="faq3" class="accordion-collapse collapse">
-                                            <div class="accordion-body">
-                                                si, certo.
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                                <!-- /FAQ -->
-                            </div>
-                            <!-- /Left container -->
-                        </div>
-                        <!-- /Left column -->
-
-                        <!-- Right column -->
-                        <div class="col-lg-4 p-lg-0">
-                            <!-- Right container -->
-                            <div class="container">
-                                <!-- TODO list card-->
-                                <div class="card my-3">
-                                    <!-- TODO list title -->
-                                    <h3 class="card-header">
-                                        Todo
-                                    </h3>
-                                    <!-- /TODO list title -->
-                                    <div class="card-body">
-                                        <!-- Check list group-->
-                                        <ul class="list-group">
-                                            <!-- list item -->
-                                            <li class="list-group-item">
-                                                <input type="checkbox" class="form-check-input">
-                                                <label>Kickoff nuove classi</label>
-                                            </li>
-                                            <!-- /list item -->
-
-                                            <!-- list item -->
-                                            <li class="list-group-item">
-                                                <input type="checkbox" class="form-check-input">
-                                                <label>Lezione su Bootstrap 5 in classe #75</label>
-                                            </li>
-                                            <!-- /list item -->
-
-                                            <!-- list item -->
-                                            <li class="list-group-item">
-                                                <input type="checkbox" class="form-check-input">
-                                                <label>Controllare username github studenti</label>
-                                            </li>
-                                            <!-- /list item -->
-                                        </ul>
-                                        <!-- /Check list group-->
-                                    </div>
-                                </div>
-                                <!-- /TODO list card-->
-
-                                <!-- Graph external card -->
-                                <div class="card p-2">
-                                    <!-- Graph internal card -->
-                                    <div class="card">
-                                        <!-- image top card -->
-                                        <img src="img/stats.jpeg" class="card-img-top" alt="Stats">
-                                        <!-- /image top card -->
-
-                                        <!-- Card body -->
-                                        <div class="card-body p-0">
-                                            <!-- Card title -->
-                                            <h5 class="card-title px-3">
-                                                Utenti Attivi
-                                            </h5>
-                                            <!-- /Card title -->
-
-                                            <!-- Card subtitle -->
-                                            <p class="card-subtitle px-3">
-                                                Lista degli utenti attivi in piattaforma nell'ultimo mese
-                                            </p>
-                                            <!-- /Card subtitle -->
-                                        </div>
-                                        <!-- /Card body -->
-
-                                        <!-- Active users list -->
-                                        <ul class="list-group list-group-flush">
-                                            <!-- January -->
-                                            <li class="list-group-item">
-                                                Gennaio: 1200
-                                            </li>
-
-                                            <!-- February -->
-                                            <li class="list-group-item">
-                                                Febbraio: 800
-                                            </li>
-
-                                            <!-- March -->
-                                            <li class="list-group-item">
-                                                Marzo: 1500
-                                            </li>
-                                        </ul>
-                                        <!-- /Active users list -->
-
-                                        <!-- Card body -->
                                         <div class="card-body">
-                                            <!-- Report link -->
-                                            <a href="" class="card-link">
-                                                Visualizza report approfondito
-                                            </a>
-                                            <!-- /Report link -->
+
+
+                                            <table class="table">
+                                                <!-- table head -->
+                                                <thead>
+                                                    <tr>
+                                                        <th>Nome</th>
+                                                        <th class="d-none d-md-table-cell">Data Inizio</th>
+                                                        <th class="d-none d-md-table-cell">ROI</th>
+                                                        <th>Stato</th>
+                                                        <th>Azioni</th>
+                                                    </tr>
+                                                </thead>
+
+                                                <!-- Table Body -->
+                                                <tbody>
+                                                    <tr>
+                                                        <!-- Name -->
+                                                        <td>
+                                                            <img src="img/class-avatar.jpg" alt="">
+
+                                                            Classe 75
+                                                        </td>
+
+                                                        <!-- Start Date -->
+                                                        <td class="d-none d-md-table-cell">
+                                                            15 Feb 2021
+                                                        </td>
+
+                                                        <!-- ROI -->
+                                                        <td class="d-none d-md-table-cell">
+                                                            20%
+                                                        </td>
+
+                                                        <!-- State -->
+                                                        <td>
+                                                            <span class="badge bg-success">Done</span>
+                                                        </td>
+
+                                                        <!-- Actions -->
+                                                        <td>
+                                                            <i
+                                                                class="fa-solid fa-pencil border border-dark rounded p-2"></i>
+
+                                                            <i
+                                                                class="fa-solid fa-trash border border-dark rounded p-2"></i>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
-                                        <!-- /Card body -->
+
+                                    </div>
+                                    <!-- /Table -->
+
+                                    <!-- FAQ -->
+                                    <div class="card my-3">
+                                        <!-- Title -->
+
+                                        <h3 class="card-header">F.A.Q.</h3>
+
+
+                                        <!-- Questions -->
+                                        <div class="accordion">
+                                            <!-- First question -->
+                                            <p class="accordion-header" id="headingTwo">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#faq1">
+                                                    Come aggiungere un nuovo studente?
+                                                </button>
+                                            </p>
+                                            <!-- First answer -->
+                                            <div id="faq1" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                    Clicca sul + in alto nella sezione blu.
+                                                </div>
+                                            </div>
+
+                                            <!-- Second question -->
+                                            <p class="accordion-header" id="headingTwo">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#faq2">
+                                                    Come posso accedere alle informazioni del mio account?
+                                                </button>
+                                            </p>
+                                            <!-- Second answer -->
+                                            <div id="faq2" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                    Clicca sull'icona della campanella.
+                                                </div>
+                                            </div>
+
+                                            <!-- Third question -->
+                                            <p class="accordion-header" id="headingTwo">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#faq3">
+                                                    Posso usare questa dashboard da mobile?
+                                                </button>
+                                            </p>
+                                            <!-- Third answer -->
+                                            <div id="faq3" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                    si, certo.
+                                                </div>
+                                            </div>
+                                        </div>
 
 
                                     </div>
-                                    <!-- /Graph internal card -->
+                                    <!-- /FAQ -->
                                 </div>
-                                <!-- /Graph external card -->
-
+                                <!-- /Left container -->
                             </div>
-                            <!-- /Right container -->
+                            <!-- /Left column -->
+
+                            <!-- Right column -->
+                            <div class="col-lg-4 p-lg-0">
+                                <!-- Right container -->
+                                <div class="container">
+                                    <!-- TODO list card-->
+                                    <div class="card my-3">
+                                        <!-- TODO list title -->
+                                        <h3 class="card-header">
+                                            Todo
+                                        </h3>
+                                        <!-- /TODO list title -->
+                                        <div class="card-body">
+                                            <!-- Check list group-->
+                                            <ul class="list-group">
+                                                <!-- list item -->
+                                                <li class="list-group-item">
+                                                    <input type="checkbox" class="form-check-input">
+                                                    <label>Kickoff nuove classi</label>
+                                                </li>
+                                                <!-- /list item -->
+
+                                                <!-- list item -->
+                                                <li class="list-group-item">
+                                                    <input type="checkbox" class="form-check-input">
+                                                    <label>Lezione su Bootstrap 5 in classe #75</label>
+                                                </li>
+                                                <!-- /list item -->
+
+                                                <!-- list item -->
+                                                <li class="list-group-item">
+                                                    <input type="checkbox" class="form-check-input">
+                                                    <label>Controllare username github studenti</label>
+                                                </li>
+                                                <!-- /list item -->
+                                            </ul>
+                                            <!-- /Check list group-->
+                                        </div>
+                                    </div>
+                                    <!-- /TODO list card-->
+
+                                    <!-- Graph external card -->
+                                    <div class="card p-2">
+                                        <!-- Graph internal card -->
+                                        <div class="card">
+                                            <!-- image top card -->
+                                            <img src="img/stats.jpeg" class="card-img-top" alt="Stats">
+                                            <!-- /image top card -->
+
+                                            <!-- Card body -->
+                                            <div class="card-body p-0">
+                                                <!-- Card title -->
+                                                <h5 class="card-title px-3">
+                                                    Utenti Attivi
+                                                </h5>
+                                                <!-- /Card title -->
+
+                                                <!-- Card subtitle -->
+                                                <p class="card-subtitle px-3">
+                                                    Lista degli utenti attivi in piattaforma nell'ultimo mese
+                                                </p>
+                                                <!-- /Card subtitle -->
+                                            </div>
+                                            <!-- /Card body -->
+
+                                            <!-- Active users list -->
+                                            <ul class="list-group list-group-flush">
+                                                <!-- January -->
+                                                <li class="list-group-item">
+                                                    Gennaio: 1200
+                                                </li>
+
+                                                <!-- February -->
+                                                <li class="list-group-item">
+                                                    Febbraio: 800
+                                                </li>
+
+                                                <!-- March -->
+                                                <li class="list-group-item">
+                                                    Marzo: 1500
+                                                </li>
+                                            </ul>
+                                            <!-- /Active users list -->
+
+                                            <!-- Card body -->
+                                            <div class="card-body">
+                                                <!-- Report link -->
+                                                <a href="" class="card-link">
+                                                    Visualizza report approfondito
+                                                </a>
+                                                <!-- /Report link -->
+                                            </div>
+                                            <!-- /Card body -->
+
+
+                                        </div>
+                                        <!-- /Graph internal card -->
+                                    </div>
+                                    <!-- /Graph external card -->
+
+                                </div>
+                                <!-- /Right container -->
+                            </div>
+                            <!-- /Right column -->
                         </div>
-                        <!-- /Right column -->
+                        <!-- /Main Dashboard row -->
                     </div>
-                    <!-- /Main Dashboard row -->  
-                    </div>
-                    
+
                 </div>
                 <!-- /Main dashboard -->
             </div>

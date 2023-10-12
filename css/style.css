@@ -20,6 +20,7 @@ img {
     --sidebar-icon-width: 30px;
     --table-avatar-width: 25px;
     --logo-mobile-width: 50px;
+    --offcanvas-btn-width: 75px;
 
     /* colors */
     --bg-sidebar-color: #051E34;
@@ -29,6 +30,8 @@ img {
     --bg-badge: #165BBA;
     --color-bell: #FF8F00;
     --white-color: white;
+    --form-border-color: lightgray;
+    --bg-input-offcanvas-form: #E9ECEF;
 }
 
 .wrapper {
@@ -90,6 +93,11 @@ main {
     background-color: var(--bg-dashboard-top-bar);
 }
 
+.ms_btn {
+    padding: 1px 10px;
+    font-size: 18px;
+}
+
 .breadcrumb-item+.breadcrumb-item::before {
     color: var(--white-color);
     content: '>>';
@@ -107,6 +115,18 @@ td {
 td img {
     width: var(--table-avatar-width);
     margin-right: 5px;
+}
+
+.ms_border-color {
+    border-color: var(--form-border-color);
+}
+
+.offcanvas-body .btn {
+    width: var(--offcanvas-btn-width);
+}
+
+.bg-offcanvas-input {
+    background-color: var(--bg-input-offcanvas-form);
 }
 
 /* Tablet */
