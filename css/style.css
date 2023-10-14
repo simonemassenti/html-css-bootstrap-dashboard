@@ -130,7 +130,7 @@ main {
     width: var(--offcanvas-btn-width);
 }
 
-.bg-offcanvas-input {
+.ms_bg-offcanvas-input {
     background-color: var(--bg-input-offcanvas-form);
 }
 
